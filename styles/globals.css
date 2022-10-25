@@ -6,10 +6,48 @@
     .list {
         @apply flex p-0 items-center list-none text-white;
     }
+
+    .list-item {
+        @apply m-[20px] font-[500];
+    }
 }
 
 @layer components {
-    .list-item {
-        @apply m-[20px] font-[500];
+    .arrow-container {
+        @apply absolute w-[10%] h-[20%] top-0 bottom-0 m-auto cursor-pointer z-10;
+    }
+
+    .featured-container {
+        height: calc(100vh - 100px);
+        @apply bg-red-500;
+    }
+}
+
+@layer components {
+    .pizzaList_container {
+        @apply py-[20px] px-[10px] flex flex-col items-center;
+    }
+
+    .pizzaList_description {
+        @apply text-[24px] text-[#444] w-[70%];
+    }
+
+    .pizzaList_wrapper {
+        @apply flex items-center justify-center w-[100%] flex-wrap;
+    }
+
+    .pizzaCard_container {
+        @apply w-[22%] p-[10px] flex flex-col items-center justify-center py-[20px] px-[40px];
+    }
+
+    .pizzaCard_title {
+        @apply text-[18px] font-bold text-red-500;
+    }
+
+    .pizzaCard_price {
+        @apply text-[18px] font-bold text-[#666];
+    }
+    .pizzaCard_desc {
+        @apply text-center text-[#777];
     }
 }

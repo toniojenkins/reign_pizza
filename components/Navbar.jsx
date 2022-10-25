@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 const Navbar = () => {
     return (
-        <div className="h-[100px] px-[50px] bg-red-500 flex items-center justify-between sticky top-0">
+        <div className="z-50  h-[100px] px-[50px] bg-red-500 flex items-center justify-between sticky top-0">
             <div className="flex-1">
                 <div className="bg-white rounded-[50%] p-[10px] h-[50px] w-[50px]">
                     <Image
