@@ -37,7 +37,7 @@
     }
 
     .pizzaCard_container {
-        @apply w-[22%] p-[10px] flex flex-col items-center justify-center py-[20px] px-[40px];
+        @apply cursor-pointer w-[22%] p-[10px] flex flex-col items-center justify-center py-[20px] px-[40px];
     }
 
     .pizzaCard_title {
@@ -49,5 +49,58 @@
     }
     .pizzaCard_desc {
         @apply text-center text-[#777];
+    }
+}
+
+@layer components {
+    .footer_container {
+        height: calc(100vh - 100px);
+        @apply flex bg-[#222];
+    }
+
+    .footer_item {
+        @apply flex relative flex-1;
+    }
+
+    .footer_item:last-child {
+        @apply flex-2 p-[50px] justify-between;
+    }
+
+    .footer_motto {
+        color: rgb(211, 211, 211);
+    }
+
+    .footer_card {
+        @apply flex-1 px-[20px];
+    }
+
+    .footer_text {
+        @apply text-[lightgray] py-2;
+    }
+
+    .footer_title {
+        @apply text-[18px] text-[#b7903c];
+    }
+
+    @media screen and (max-width: 480px) {
+        .container {
+            height: auto;
+            text-align: center;
+        }
+        .item:first-child {
+            display: none;
+        }
+
+        .item {
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .text {
+            font-size: 20px;
+        }
     }
 }
