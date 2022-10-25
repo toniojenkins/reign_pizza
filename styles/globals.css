@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .list {
+        @apply flex p-0 items-center list-none text-white;
+    }
+}
+
+@layer components {
+    .list-item {
+        @apply m-[20px] font-[500];
+    }
+}
